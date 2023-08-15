@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    background-color: lavender;
+}
+
+.Logo_aluraoracle, .Logo_github, .Main_text{
+    display: inline;
+}
+
+header div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.Logo_aluraoracle{
+    width: 300px;
+    height: auto;
+    transition: 1s;
+}
+
+.Logo_aluraoracle:hover{
+    transform: translateY(0) scale(0.80);
+}
+
+.Logo_aluraoracle:after{
+    background-color: #f2f2f2;
+    content: "";
+    height: 10px;
+    position: absolute;
+    top: 390px;
+    width: 100%;
+}
+
+.Logo_github{
+    width: 250px;
+    height: auto;
+    transition: 1s;
+}
+
+.Logo_github:hover{
+    transform: translateY(0) scale(0.80);
+}
+
+section{
+    margin: 0 10px 0 10px;
+}
+
+.uncrypted_text, .important_text, .buttons{
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.uncrypted_text{
+    outline: none;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    font-size: 30px;
+    border-color: transparent;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 20px;
+    resize: none;
+    text-transform: lowercase;
+}
+
+.important_text p{
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.important_text, .buttons{
+    translate: 1px -39px;
+    background: transparent;
+}
+
+.encrypt_btn{
+    border: transparent;
+    background-color:gainsboro;
+    font-size: 30px;
+    border-radius: 24px;
+    cursor: pointer;
+    height: 70px;
+    width: 300px;
+    margin-right: 4px;
+}
+
+#info_ico{
+    translate: -2px 7px;
+}
+
+#paste_ico{
+    border: none;
+    background: transparent;
+    padding: unset;
+    translate: 515px -44px;
+    transition: .10s;
+}
+
+#paste_ico:hover::before{
+    transform: scale(1.6);
+    background: gray;
+    box-shadow: 0 0 10px gray;
+    opacity: 30%;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: 10s;
+}
+
+.decrypt_btn{
+    border: transparent;
+    background-color: ghostwhite;
+    font-size: 30px;
+    border-radius: 24px;
+    cursor: pointer;
+    height: 70px;
+    width: 300px;
+    margin-left: 4px;
+}
+
+.encrypt_btn:hover, .decrypt_btn:hover, .copy_btn:hover{
+    box-shadow: .5rem .5rem 1rem whitesmoke,
+    -.5rem -.5rem 1rem #ccc;
+}
+
+.decrypt_btn:active, .copy_btn:active{
+    box-shadow: inset  .2rem 1rem ghostwhite,
+    inset -.2rem -.2rem 1rem #ccc;
+}
+
+.encrypt_btn:active{
+    box-shadow: inset  .2rem 1rem gainsboro,
+    inset -.2rem -.2rem 1rem #ccc;
+}
+
+.encrypt_btn, .decrypt_btn, .copy_btn{
+    transition: all 1s ease;
+    box-shadow: .5rem .5rem 1rem #ccc,
+    -.5rem -.5rem 1rem whitesmoke;
+}
+
+.encrypted_text{
+    outline: none;
+    width: 476px;
+    height: 438px;
+    font-size: 30px;
+    border-color: transparent;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 20px;
+    resize: none;
+    text-transform: lowercase;
+    background-image: url(Images/nosearch.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.copy_btn{
+    border: transparent;
+    background-color: ghostwhite;
+    font-size: 30px;
+    border-radius: 24px;
+    cursor: pointer;
+    height: 70px;
+    width: 300px;
+    translate: 0 -81px;
+}
+
+.encrypted_text, .copy_container{
+    display: flex;
+    justify-content: center;
+}
+
+.copy_right{
+    display: flex;
+    justify-content:center;
+}
+
+.madeby{
+    display: flex;
+    justify-content: center;
+}
