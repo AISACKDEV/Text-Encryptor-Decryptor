@@ -1,4 +1,5 @@
-# textencryptor
-First project using HTML5, JavaScript and CSS3. (BETA)
+<h1>Text Encriptor</h1>
 
-You can check the website here: https://elaisack.github.io/textencryptor/
+<p>First project using HTML, JavaScript and CSS</p>
+
+<p>You can check the website here: https://aisackdev.github.io/textencryptor/</p>
